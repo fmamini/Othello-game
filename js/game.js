@@ -52,7 +52,16 @@ function startGame() {
     $('#45').html(imgWhite).addClass('white');
     $('#55').html(imgWhite).addClass('white');
 
-}
+};
+function points1(){
+    pointStart1 = pointStart1 + 10 ;
+    $('.areaPoints1').html(pointStart1.toFixed(0));
+};
+
+function points2(){
+    pointStart2 = pointStart2 + 10 ;
+    $('.areaPoints2').html(pointStart2.toFixed(0));
+};
 
 $("#startOthelloButton").click(function () {
     document.getElementById("startOthelloButton").style.display = "none";
@@ -61,6 +70,6 @@ $("#startOthelloButton").click(function () {
     startGame();
 });
 
-$('#resetOthelloButton').click(function () {
+$("#resetOthelloButton").click(function () {
     startGame();
 });
